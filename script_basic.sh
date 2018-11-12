@@ -24,8 +24,7 @@ get_resource() {
 }
 
 download_resource() {
-	SOURCE_URL="$1"
-	get_resource $SOURCE_URL
+	SOURCE_URL="$1"	
 	if [ -f "$SOURCE_ARCHIVE" ]
 	then
 		echo "$SOURCE_ARCHIVE found."
@@ -89,7 +88,7 @@ install_resource(){
 	URL="$1"
 	DESTINY_PATH="$2"
 	CONSTANT_NAME="$3"
-
+	get_resource $SOURCE_URL
 	download_resource $URL
 	unpack $DESTINY_PATH
 	config_environment $CONSTANT_NAME
