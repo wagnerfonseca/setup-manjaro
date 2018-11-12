@@ -7,4 +7,4 @@ echo "Serão instalados os seguites pacotes:"
 echo "  youtube-dl, curl, vim, tree, htop, tilix, guake, yaourt, figlet, cowsay, screenfetch"
 echo "---------------------------------------------------"
 
-_installMany "youtube-dl" "curl" "vim" "tree" "htop" "tilix" "guake" "yaourt" "figlet" "cowsay" "screenfetch" 
+_installMany "youtube-dl" "curl" "vim" "tree" "htop" "tilix" "guake" "yaourt" "figlet" "cowsay" "screenfetch" "xclip"
