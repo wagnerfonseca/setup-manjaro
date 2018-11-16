@@ -15,5 +15,6 @@ Esses scripts estão sendo criado para faciliar a configuração e instalação 
 * `04.install-maven.sh`: Instala e configura o Maven.
 * `05.install-tomcat.sh`: Instala e faz a configuração básica do Tomcat 7
 * `install-postman`: Instala através do tarball do Postman.
+* `build-alias.sh`: Escrever alias que são de uso comum.
   
 
