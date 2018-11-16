@@ -10,9 +10,10 @@ Esses scripts estão sendo criado para faciliar a configuração e instalação 
 
 ### Scripts de Instalações
 * `01.install-utilities.sh`: Instala pacotes básicos, ex.: youtube-dl, curl, vim, tree, entre outros.
-* `02.setup-manjarao-gnome.sh`: configurações básicas para gnome.
+* `02.setup-manjaro-gnome.sh`: configurações básicas para gnome.
 * `03.install-jdk.sh`: Instala e configura o JDK da Oracle, e substitui o OpenJDk mas sem remove-lo.
-* `04.install-mave.sh`: Instala e configura o Manven.
-* `05.isntall-postman`: Instala através do tarball do Postman.
+* `04.install-maven.sh`: Instala e configura o Maven.
+* `05.install-tomcat.sh`: Instala e faz a configuração básica do Tomcat 7
+* `install-postman`: Instala através do tarball do Postman.
   
 
