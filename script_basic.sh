@@ -32,10 +32,10 @@ download_resource() {
 		echo "$SOURCE_ARCHIVE not found. So download now."
 		if [ ! -e $SOURCE_NAME ]; then
 			if [ ! -r $SOURCE_ARCHIVE ]; then
-				if [ -n "$(which curl)" ]; then
+				if [ -n "$(which wget)" ]; then
+					wget $SOURCE_URL				
+				elif [ -n "$(which curl)" ]; then
 					curl -O $SOURCE_URL
-				elif [ -n "$(which wget)" ]; then
-					wget $SOURCE_URL
 				fi
 			else
 				echo "Source could not be downloaded." 1>&2
@@ -81,6 +81,13 @@ config_environment() {
 remove_source() {
 	echo "Removendo o tarball ${SOURCE_ARCHIVE}"
 	rm $SOURCE_ARCHIVE
+}
+
+create_symlink() {
+	DESTINY_SOURCE="$1"
+	SOURCE="$2"
+	SOURCE_PATH_LOCAL=$DESTINY_PATH/$SOURCE_NAME
+	sudo ln -s $SOURCE_PATH_LOCAL/$DESTINY_SOURCE /usr/local/bin/$SOURCE
 }
 
 # install_resource <url_resource> <destiny_path> <constant_variable_name>
