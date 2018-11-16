@@ -1,4 +1,5 @@
 #!/bin/bash
+. script_basic.sh
 
 VERSION="3.6.0"
 

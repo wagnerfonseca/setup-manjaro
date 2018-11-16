@@ -88,7 +88,7 @@ install_resource(){
 	URL="$1"
 	DESTINY_PATH="$2"
 	CONSTANT_NAME="$3"
-	get_resource $SOURCE_URL
+	get_resource $URL
 	download_resource $URL
 	unpack $DESTINY_PATH
 	config_environment $CONSTANT_NAME
