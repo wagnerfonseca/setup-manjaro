@@ -8,6 +8,6 @@ echo "alias pmql='pacman -Ql' " >> ~/.profile
 echo "alias pmr='sudo pacman -Rs' " >> ~/.profile
 echo "alias pms='pacman --color always -Ss ' " >> ~/.profile
 echo "alias pmu='sudo pacman -Syyuu' " >> ~/.profile
-echo "alias c='clear'"
+echo "alias c='clear'" >> ~/.profile
 
 source $HOME/.profile
