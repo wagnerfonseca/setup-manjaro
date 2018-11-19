@@ -9,6 +9,7 @@ cat > ~/.local/share/applications/postman.desktop <<EOL
 [Desktop Entry]
 Encoding=UTF-8
 Name=Postman
+Comment=API Development Environment
 Exec=postman
 Icon=/opt/local/bin/Postman/app/resources/app/assets/icon.png
 Terminal=false

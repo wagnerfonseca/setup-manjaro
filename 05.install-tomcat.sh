@@ -1,7 +1,7 @@
 #!/bin/bash
 . script_basic.sh
 
-TOMCAT_VERSION=7.0.91
+TOMCAT_VERSION=7.0.92
 TOMCAT_NAME=apache-tomcat-$TOMCAT_VERSION
 TOMCAT_ARCHIVE=$TOMCAT_NAME.tar.gz
 TOMCAT_URL=http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-7/v$TOMCAT_VERSION/bin/$TOMCAT_ARCHIVE

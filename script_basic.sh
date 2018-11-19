@@ -42,7 +42,7 @@ download_resource() {
 				exit 1
 			fi
 		fi
-	fi	
+	fi
 }
 
 # unpack <destiny_path>
@@ -50,6 +50,7 @@ download_resource() {
 unpack() {
 	DESTINY_PATH="$1"
 	SOURCE_PATH=$DESTINY_PATH/$SOURCE_NAME
+	echo $SOURCE_PATH
 	echo "Descompactando o tarball ${SOURCE_ARCHIVE} e enviando para o diretório ${SOURCE_PATH}"
     if [ ! -d "$SOURCE_PATH" ]; then
         if [ ! -d "$DESTINY_PATH" ]; then

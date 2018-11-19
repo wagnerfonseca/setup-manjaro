@@ -1,26 +1,7 @@
 #!/bin/bash
 
-sudo apt update -y
-
-sudo apt upgrade -y
-
-case ${OSTYPE} in
-    linux-gnu)
-        r=$(lsb_release -si)
-        if [ $r == "Ubuntu" ] || [ $r == "Debian" ]; then                        
-            sudo apt-get install -y binutils bison gcc make git 
-        else
-            echo "Not Ubuntu..."
-        fi
-        ;;
-    darwin*)
-        echo "Hello MacOS"
-        ;;
-    *) echo Unknown;;
-esac
-
 compiler="go1.4"
-stable="go1.8.7"
+stable="go1.11.2"
 
 if [ "/bin/bash" -e $SHELL ]
 then
