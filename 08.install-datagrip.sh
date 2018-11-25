@@ -12,14 +12,14 @@ unpack $DESTINY_PATH
 
 remove_source
 
-sudo ln -s /opt/Datagrip/DataGrip-${VERSION}/bin /usr/local/bin/DataGrip2018 
+sudo ln -s /opt/Datagrip/DataGrip-${VERSION}/bin /usr/local/bin/datagrip 
 
 cat > ~/.local/share/applications/datagrip.desktop <<EOL
 [Desktop Entry]
 Encoding=UTF-8
 Name=DataGrip
 Comment=The Cross-Platform IDE for Databases & SQL by JetBrains
-Exec=DataGrip2018
+Exec=datagrip
 Icon=/opt/Datagrip/DataGrip-$VERSION/bin/datagrip.png
 Terminal=false
 Type=Application
