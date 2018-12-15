@@ -2,6 +2,11 @@
 
 FILE_PROFILE=/home/$USER/.profile
 
+# get_resource <url>
+# Extract the name and name of resource's file
+# extract <SOURCE_ARCHIVE>
+# extract <SOURCE_NAME>
+# extract <VERSION>
 get_resource() {
 	SOURCE_URL="$1"
 	if [[ $SOURCE_URL =~ ([^/]+)\-bin\.tar\.gz$ ]]
