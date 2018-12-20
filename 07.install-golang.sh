@@ -1,14 +1,14 @@
 #!/bin/bash
 . script_basic.sh
 
-VERSION="1.10.5"
+VERSION="1.11.4"
+SOURCE_NAME="go${VERSION}"
+SOURCE_ARCHIVE="${SOURCE_NAME}.linux-amd64.tar.gz"
 
-URL="https://dl.google.com/go/go${VERSION}.linux-amd64.tar.gz" 
+URL="https://dl.google.com/go/$SOURCE_ARCHIVE" 
 
 get_resource $URL
 download_resource $URL
-SOURCE_NAME="go1.10.5"
-SOURCE_ARCHIVE="go1.10.5.linux-amd64.tar.gz"
-unpack "/opt/local/bin/go1.10.5"
+unpack "/usr/local"
 config_environment "GOROOT"
 remove_source
