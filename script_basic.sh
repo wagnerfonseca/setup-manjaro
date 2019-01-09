@@ -107,3 +107,12 @@ install_resource(){
 	config_environment $CONSTANT_NAME
 	remove_source
 }
+
+install_resource_configless() {
+	URL="$1"
+	DESTINY_PATH="$2"	
+	get_resource $URL
+	download_resource $URL
+	unpack $DESTINY_PATH	
+	remove_source
+}
