@@ -12,7 +12,7 @@ unpack $DESTINY_PATH
 
 remove_source
 
-sudo ln -s /opt/Datagrip/DataGrip-${VERSION}/bin /usr/local/bin/datagrip 
+# sudo ln -s /opt/Datagrip/DataGrip-${VERSION}/bin /usr/local/bin/datagrip 
 
 cat > ~/.local/share/applications/datagrip.desktop <<EOL
 [Desktop Entry]
@@ -25,3 +25,5 @@ Terminal=false
 Type=Application
 Categories=Development;
 EOL
+
+sh /opt/Datagrip/DataGrip-${VERSION}/bin/datagrip.sh

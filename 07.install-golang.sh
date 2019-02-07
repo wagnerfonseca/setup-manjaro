@@ -1,7 +1,7 @@
 #!/bin/bash
 . script_basic.sh
 
-VERSION="1.11.4"
+VERSION="1.11.5"
 SOURCE_NAME="go${VERSION}"
 SOURCE_ARCHIVE="${SOURCE_NAME}.linux-amd64.tar.gz"
 
