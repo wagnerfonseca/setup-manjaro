@@ -11,5 +11,5 @@ get_resource $URL
 download_resource $URL 
 PATH_SOURCE=$HOME/.dynamodblocal
 unpack $PATH_SOURCE
-remove_resource
+remove_source
 
