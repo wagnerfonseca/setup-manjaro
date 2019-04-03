@@ -1,5 +1,5 @@
 #!/bin/bash
-. script_basic.sh
+. package-install-basic.sh
 
 VERSION="3.6.0"
 

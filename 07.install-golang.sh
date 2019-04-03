@@ -1,5 +1,5 @@
 #!/bin/bash
-. script_basic.sh
+. package-install-basic.sh
 
 VERSION="1.11.5"
 SOURCE_NAME="go${VERSION}"

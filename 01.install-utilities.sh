@@ -1,5 +1,5 @@
 #!/bin/bash
-. basic_pac_install.sh
+. package-install-pac.sh
 
 #package=git;
 #_install "${package}";

@@ -1,5 +1,5 @@
 #!/bin/bash
-. script_basic.sh
+. package-install-basic.sh
 
 echo "Instalando e substituindo o OpenJDK para o JDK Oracle"
 

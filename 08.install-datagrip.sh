@@ -1,5 +1,5 @@
 #!/bin/bash
-. script_basic.sh
+. package-install-basic.sh
 
 VERSION="2018.2.5"
 URL="https://download.jetbrains.com/datagrip/datagrip-${VERSION}.tar.gz"

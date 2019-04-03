@@ -3,7 +3,7 @@
 # Just copy and paste 
 # install and start a local Dynamo automatically
 #
-. script_basic.sh
+. package-install-basic.sh
 
 URL=http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tar.gz
 

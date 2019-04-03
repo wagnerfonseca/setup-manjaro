@@ -1,5 +1,5 @@
 #!/bin/bash
-. script_basic.sh
+. package-install-basic.sh
 
 VERSION="2018.3.4"
 URL="https://download.jetbrains.com/idea/ideaIU-${VERSION}.tar.gz"

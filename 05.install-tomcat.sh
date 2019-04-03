@@ -1,5 +1,5 @@
 #!/bin/bash
-. script_basic.sh
+. package-install-basic.sh
 
 TOMCAT_VERSION=7.0.92
 TOMCAT_NAME=apache-tomcat-$TOMCAT_VERSION
