@@ -50,19 +50,19 @@ download_resource() {
 	fi
 }
 
-# unpack <destiny_path>
+# unpack <TARGET_PATH>
 # unpack tarball 
 unpack() {
-	DESTINY_PATH="$1"
-	SOURCE_PATH=$DESTINY_PATH/$SOURCE_NAME
+	TARGET_PATH="$1"
+	SOURCE_PATH=$TARGET_PATH/$SOURCE_NAME
 	echo $SOURCE_PATH
 	echo "Descompactando o tarball ${SOURCE_ARCHIVE} e enviando para o diretório ${SOURCE_PATH}"
     if [ ! -d "$SOURCE_PATH" ]; then
-        if [ ! -d "$DESTINY_PATH" ]; then
+        if [ ! -d "$TARGET_PATH" ]; then
             echo "Criando diretório"
-            sudo mkdir -p $DESTINY_PATH
+            sudo mkdir -p $TARGET_PATH
         fi
-        if ! sudo tar zxf $SOURCE_ARCHIVE -C $DESTINY_PATH; then
+        if ! sudo tar zxf $SOURCE_ARCHIVE -C $TARGET_PATH; then
 			echo "Houve um erro ao descompactar o arquivo .tar.gz"
 			exit 1
 		fi
@@ -92,27 +92,27 @@ remove_source() {
 create_symlink() {
 	DESTINY_SOURCE="$1"
 	SOURCE="$2"
-	SOURCE_PATH_LOCAL=$DESTINY_PATH/$SOURCE_NAME
+	SOURCE_PATH_LOCAL=$TARGET_PATH/$SOURCE_NAME
 	sudo ln -s $SOURCE_PATH_LOCAL/$DESTINY_SOURCE /usr/local/bin/$SOURCE
 }
 
-# install_resource <url_resource> <destiny_path> <constant_variable_name>
+# install_resource <url_resource> <TARGET_PATH> <constant_variable_name>
 install_resource(){
 	URL="$1"
-	DESTINY_PATH="$2"
+	TARGET_PATH="$2"
 	CONSTANT_NAME="$3"
 	get_resource $URL
 	download_resource $URL
-	unpack $DESTINY_PATH
+	unpack $TARGET_PATH
 	config_environment $CONSTANT_NAME
 	remove_source
 }
 
 install_resource_configless() {
 	URL="$1"
-	DESTINY_PATH="$2"	
+	TARGET_PATH="$2"	
 	get_resource $URL
 	download_resource $URL
-	unpack $DESTINY_PATH	
+	unpack $TARGET_PATH	
 	remove_source
 }
